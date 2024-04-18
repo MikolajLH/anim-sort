@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import sort_generators
 
-ALGORITHMS = ['quick', 'insertion', 'merge', 'heap', 'selection']
+ALGORITHMS = ['quick', 'insertion', 'merge', 'heap', 'selection', 'comb']
 
 def get_title_and_generator(name):
     match name:
@@ -18,6 +18,8 @@ def get_title_and_generator(name):
             return "HeapSort", sort_generators.heap_sort
         case 'selection':
             return "SelectionSort", sort_generators.selection_sort
+        case 'comb':
+            return "CombSort", sort_generators.comb_sort
         
     raise ValueError("Not implemented")
 
