@@ -11,6 +11,7 @@ def comb_sort(array, comp):
         while i + gap < len(array):
             yield i
             if comp(array[gap + i], array[i]):
+                yield gap + i
                 array[i], array[gap + i] = array[gap + i], array[i]
                 swapped = True
             i += 1

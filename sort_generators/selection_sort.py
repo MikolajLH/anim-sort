@@ -7,5 +7,7 @@ def selection_sort(array, comp):
             yield j
             if comp(array[j], array[k]):
                 k = j
+        yield k
+        yield i
         array[k], array[i] = array[i], array[k]
     yield 0

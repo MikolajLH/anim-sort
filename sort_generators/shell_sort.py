@@ -10,6 +10,7 @@ def shell_sort(array, comp):
             key = array[j]
             i = j + h
             while i < len(array) and comp(array[i], key):
+                yield i - h
                 yield i
                 array[i - h] = array[i]
                 i += h

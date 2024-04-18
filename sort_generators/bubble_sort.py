@@ -7,8 +7,9 @@ def bubble_sort(array, comp):
             yield j
             if comp(array[j + 1], array[j]):
                 comparisions = True
-                array[j], array[j + 1] = array[j + 1], array[j]
                 yield j + 1
+                array[j], array[j + 1] = array[j + 1], array[j]
+                
         if comparisions is False:
             break
     yield 0

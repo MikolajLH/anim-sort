@@ -9,13 +9,17 @@ def heap_sort(array, comp):
         R = right(i)
         max_ind = i
         if L < n and not comp(array[L], array[max_ind]):
+            yield max_ind
             max_ind = L
         if R < n and not comp(array[R], array[max_ind]):
+            yield max_ind
             max_ind = R
         if max_ind != i:
             yield max_ind
+            yield i
             array[max_ind], array[i] = array[i], array[max_ind]
             yield from heapify(array, n, max_ind, comp)
+
     
     def build_heap(array, comp):
         n = len(array)
