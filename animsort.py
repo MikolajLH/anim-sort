@@ -3,8 +3,9 @@ from argparse import ArgumentParser
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import sort_generators
+import sort_generators.shell_sort
 
-ALGORITHMS = ['quick', 'insertion', 'merge', 'heap', 'selection', 'comb']
+ALGORITHMS = ['quick', 'insertion', 'merge', 'heap', 'selection', 'comb', 'shell']
 
 def get_title_and_generator(name):
     match name:
@@ -20,6 +21,8 @@ def get_title_and_generator(name):
             return "SelectionSort", sort_generators.selection_sort
         case 'comb':
             return "CombSort", sort_generators.comb_sort
+        case 'shell':
+            return "ShellSort", sort_generators.shell_sort
         
     raise ValueError("Not implemented")
 
