@@ -5,7 +5,7 @@ import matplotlib.animation as animation
 import sort_generators
 import sort_generators.shell_sort
 
-ALGORITHMS = ['quick', 'insertion', 'merge', 'heap', 'selection', 'comb', 'shell']
+ALGORITHMS = ['quick', 'insertion', 'merge', 'heap', 'selection', 'comb', 'shell', 'bubble']
 
 def get_title_and_generator(name):
     match name:
@@ -23,6 +23,8 @@ def get_title_and_generator(name):
             return "CombSort", sort_generators.comb_sort
         case 'shell':
             return "ShellSort", sort_generators.shell_sort
+        case 'bubble':
+            return "BubbleSort", sort_generators.bubble_sort
         
     raise ValueError("Not implemented")
 
