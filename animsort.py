@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import sort_generators
 
-ALGORITHMS = ['quick', 'insertion', 'merge']
+ALGORITHMS = ['quick', 'insertion', 'merge', 'heap']
 
 def get_title_and_generator(name):
     match name:
@@ -14,6 +14,8 @@ def get_title_and_generator(name):
             return "MergeSort", sort_generators.merge_sort
         case "insertion":
             return "InsertionSort", sort_generators.insertion_sort
+        case 'heap':
+            return "HeapSort", sort_generators.heap_sort
         
     raise ValueError("Not implemented")
 
