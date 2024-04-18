@@ -1,5 +1,5 @@
 # Usage:
-`python main.py [-h] [-N <int>] [-o <str>] [-a <str>] [-bc <color>] [-pc <color>] [--bg-color <color>] [--tt-c <color>] `
+`python animsort.py [-h] [-N <int>] [-o <str>] [-a <str>] [-bc <color>] [-pc <color>] [--bg-color <color>] [--tt-c <color>] `
 
 
 ## options:
@@ -13,18 +13,18 @@
   - `--tt-c <color>`      title text color
 
 # Examples
-`python .\main.py -N 100 -o merge_sort_demo -bc gray -pc red --bg-color black --tt-c white`
+`python .\animsort.py -N 100 -o merge_sort_demo -bc gray -pc red --bg-color black --tt-c white`
 
 ![](examples/merge_sort_demo.gif)
 
 --- 
 
-`python .\main.py -N 100 -a quick -o quick_sort_demo -bc blueviolet -pc violet --bg-color teal`
+`python .\animsort.py -N 100 -a quick -o quick_sort_demo -bc blueviolet -pc violet --bg-color teal`
 
 ![](examples/quick_sort_demo.gif)
 
 ---
 
-`python .\main.py -N 100 -a insertion -o insertion_sort_demo -pc gold -bc cyan --bg-color darkmagenta --tt-c navy`
+`python .\animsort.py -N 100 -a insertion -o insertion_sort_demo -pc gold -bc cyan --bg-color darkmagenta --tt-c navy`
 
 ![](examples/insertion_sort_demo.gif)
