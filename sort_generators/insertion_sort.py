@@ -2,7 +2,7 @@ def insertion_sort(array, comp):
     for i in range(1, len(array)):
         key = array[i]
         j = i - 1
-        while j >= 0 and comp(array[j], key):
+        while j >= 0 and comp(key, array[j]):
             yield j
             array[j + 1] = array[j]
             j -= 1
