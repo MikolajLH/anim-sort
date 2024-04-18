@@ -22,3 +22,9 @@
 `python .\main.py -N 100 -a quick -o quick_sort_demo -bc blueviolet -pc violet --bg-color teal`
 
 ![](quick_sort_demo.gif)
+
+---
+
+`python .\main.py -N 100 -a insertion -o insertion_sort_demo -pc gold -bc cyan --bg-color darkmagenta --tt-c navy`
+
+![](insertion_sort_demo.gif)
