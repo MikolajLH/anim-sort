@@ -6,7 +6,7 @@
   - `-h`, `--help`          show this help message and exit
   - `-N <int>`            number of elements to sort
   - `-o <str>`            name of file in which the result will be stored
-  - `-a <str>`            which sorting algorithm to use: `['quick', 'insertion', 'merge']`
+  - `-a <str>`            which sorting algorithm to use: `['quick', 'insertion', 'merge', 'heap', 'selection', 'comb', 'shell', 'bubble']`
   - `-bc <color>`         color of bars
   - `-pc <color>`         color of pivot
   - `--bg-color <color>`  background color
